@@ -1,4 +1,4 @@
-// Issues and fixes mined from two WhatsApp owner group chats (~89,000 messages,
+// Issues and fixes found from group chats (~89,000 messages,
 // filtered to ~9,600 issue-related messages, reviewed 2026-07-16) covering the
 // Mahindra BE 6, XEV 9e and XEV 9S. Sender phone numbers were redacted before
 // review; no personal information from the source chats is reproduced here.
