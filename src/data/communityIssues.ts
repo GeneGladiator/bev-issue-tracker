@@ -365,6 +365,16 @@ export const COMMUNITY_ISSUES: CommunityIssue[] = [
       'A "service due"/service-reminder alert pops up in the cluster or Me4U app well before the actual service is due — often within 200-2,500km of a completed service, and sometimes on nearly every drive-cycle start. Widely reported and, per owners who\'ve asked their SC directly, treated by Mahindra as a known false-trigger bug rather than a real overdue-service condition. A minority of owners have had it recur every time no matter what they try.',
     fix: 'Owners self-reset it in-car using the "BE6/XEV9 Service Reminder Reset" video on the Mahindra DIY YouTube channel (youtu.be/zouTwpFCDdk).\n\nSteps:\n1. Turn the car on in ACC mode, without pressing any pedal.\n2. Check the CID/DID to confirm the alert is present.\n3. Press and hold the OK button (rightmost button on the steering wheel).\n4. While still holding OK, turn the ignition off and wait for the screen to go fully black.\n5. Still holding OK, turn the ignition back on and keep holding for about 10 seconds, until the car finishes booting.\n6. Release OK and check the CID/alert history to confirm the reminder is gone.\n\nIf it doesn\'t stick, ask the SC to do it for you — some do it as a quick in-and-out visit, and some proactively switch the reminder off before handing the car back after a scheduled service. That said, several owners report it reappearing within a few hundred km regardless, or the steps simply stopping working for them.\n\nAlso worth knowing: when the feature is working correctly, the alert is meant to start appearing about 400km before the scheduled service is actually due — if you\'re seeing it much earlier than that, it\'s the bug, not a real early-service signal.',
   },
+  {
+    issue: 'Battery State of Health (SOH) not disclosed to owners',
+    severity: 'minor',
+    category: 'Service & maintenance',
+    models: ['BE 6', 'XEV 9e', 'XEV 9S'],
+    frequency: 'widespread',
+    description:
+      'Mahindra\'s authorized service centres do not readily share a car\'s battery State of Health (SOH) with owners, even on request. The car itself has no in-cluster or Me4U-app display of SOH, so owners have essentially no visibility into how much their battery has degraded over time — a significant transparency gap given SOH directly affects real-world range and resale value.',
+    fix: null,
+  },
 ]
 
 export const ISSUE_CATEGORIES = Array.from(new Set(COMMUNITY_ISSUES.map((i) => i.category)))
